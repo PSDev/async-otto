@@ -1,5 +1,5 @@
-Async Otto
-===================
+Async Otto [![Build Status](https://travis-ci.org/PSDev/async-otto.png?branch=master)](https://travis-ci.org/PSDev/async-otto) [![Build Status](https://ci.psdev.de/job/PSDevAsyncOtto/badge/icon)](https://ci.psdev.de/job/PSDevAsyncOtto/)
+==========
 
 Extension to Squares Otto library to provide a Bus which always posts to the main thread.
 
