@@ -1,7 +1,7 @@
 Async Otto [![Build Status](https://travis-ci.org/PSDev/async-otto.png?branch=master)](https://travis-ci.org/PSDev/async-otto) [![Build Status](http://ci.psdev.de/job/PSDevAsyncOtto/badge/icon)](http://ci.psdev.de/job/PSDevAsyncOtto/)
 ==========
 
-Extension to Squares Otto library to provide a Bus which always posts to the main thread.
+Extension to [Squares Otto][2] library to provide a Bus which always posts to the main thread.
 
 
 Download
@@ -35,3 +35,4 @@ License
     limitations under the License.
     
 [1]: http://repository.sonatype.org/service/local/artifact/maven/redirect?r=central-proxy&g=de.psdev&a=async-otto&v=LATEST
+[2]: http://square.github.com/otto/
