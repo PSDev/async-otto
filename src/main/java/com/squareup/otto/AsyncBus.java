@@ -23,7 +23,7 @@ import android.os.Message;
 /**
  * Special Bus which handles being called from another thread
  */
-public class AsyncBus extends Bus implements Handler.Callback {
+public class AsyncBus extends Bus {
     private static final int MESSAGE_POST_EVENT = 1;
 
     private final Handler mMainThreadHandler;
@@ -46,7 +46,7 @@ public class AsyncBus extends Bus implements Handler.Callback {
 
     public AsyncBus(final ThreadEnforcer enforcer, final String identifier, final HandlerFinder handlerFinder) {
         super(enforcer, identifier, handlerFinder);
-        mMainThreadHandler = new Handler(Looper.getMainLooper(), this);
+        mMainThreadHandler = new Handler(Looper.getMainLooper(), mMainThreadHandlerCallback);
     }
 
     @Override
@@ -58,13 +58,18 @@ public class AsyncBus extends Bus implements Handler.Callback {
         }
     }
 
-    @Override
-    public boolean handleMessage(final Message message) {
-        boolean messageHandled = false;
-        if (message.what == MESSAGE_POST_EVENT) {
-            AsyncBus.super.post(message.obj);
-            messageHandled = true;
+    //
+
+    private final Handler.Callback mMainThreadHandlerCallback = new Handler.Callback() {
+        @Override
+        public boolean handleMessage(final Message message) {
+            boolean messageHandled = false;
+            if (message.what == MESSAGE_POST_EVENT) {
+                AsyncBus.super.post(message.obj);
+                messageHandled = true;
+            }
+            return messageHandled;
         }
-        return messageHandled;
-    }
+    };
+
 }
