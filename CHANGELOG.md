@@ -4,7 +4,7 @@ Change Log
 Version 1.0.3 *(IN DEVELOPMENT)*
 ----------------------------
 
-Version 1.0.2 *(2013-06-01)*
+Version 1.0.2 *(2014-06-01)*
 ----------------------------
 
 * Updated dependencies
