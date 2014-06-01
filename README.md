@@ -13,7 +13,7 @@ Download [the latest JAR][1] or grab via Maven:
 <dependency>
   <groupId>de.psdev</groupId>
   <artifactId>async-otto</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 
