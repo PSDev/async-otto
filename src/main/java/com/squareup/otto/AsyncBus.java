@@ -1,5 +1,5 @@
 /*
- * Copyright 2013 Philip Schiffer
+ * Copyright 2013-2014 Philip Schiffer
  *
  *    Licensed under the Apache License, Version 2.0 (the "License");
  *    you may not use this file except in compliance with the License.
@@ -19,11 +19,12 @@ package com.squareup.otto;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import de.psdev.asyncotto.EventBus;
 
 /**
  * Special Bus which handles being called from another thread
  */
-public class AsyncBus extends Bus {
+public class AsyncBus extends Bus implements EventBus {
     private static final int MESSAGE_POST_EVENT = 1;
 
     private final Handler mMainThreadHandler;
@@ -57,8 +58,6 @@ public class AsyncBus extends Bus {
             mMainThreadHandler.sendMessage(mMainThreadHandler.obtainMessage(MESSAGE_POST_EVENT, event));
         }
     }
-
-    //
 
     private final Handler.Callback mMainThreadHandlerCallback = new Handler.Callback() {
         @Override
