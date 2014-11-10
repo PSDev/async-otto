@@ -15,7 +15,7 @@
     <description>Extension to Squares Otto library to provide a Bus which always posts to the main thread.</description>
     <url>http://psdev.de/async-otto/</url>
     <inceptionYear>2013</inceptionYear>
-    <version>1.0.3</version>
+    <version>1.0.4-SNAPSHOT</version>
 
     <developers>
         <developer>
@@ -36,7 +36,7 @@
         <url>https://github.com/PSDev/async-otto</url>
         <connection>scm:git:git://github.com/PSDev/async-otto.git</connection>
         <developerConnection>scm:git:git@github.com:PSDev/async-otto.git</developerConnection>
-        <tag>1.0.3</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
