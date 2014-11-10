@@ -57,7 +57,7 @@
 
         <!-- Dependency Versions -->
         <junit.version>4.11</junit.version>
-        <robolectric.version>2.3</robolectric.version>
+        <robolectric.version>2.4</robolectric.version>
 
         <android.version>4.1.1.4</android.version>
         <otto.version>1.3.5</otto.version>

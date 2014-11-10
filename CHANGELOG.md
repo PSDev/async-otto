@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 1.0.3 *(IN DEVELOPMENT)*
+Version 1.0.3 *(2014-11-10)*
 ----------------------------
 
 * Add EventBus interface
