@@ -1,4 +1,4 @@
-Async Otto [![Build Status](http://ci.psdev.de/job/PSDevAsyncOtto/badge/icon)](http://ci.psdev.de/job/PSDevAsyncOtto/)
+Async Otto [![Build Status](http://ci.psdev.de/job/PSDevAsyncOtto/badge/icon)](http://ci.psdev.de/job/PSDevAsyncOtto/) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/de.psdev/async-otto/badge.svg)](https://maven-badges.herokuapp.com/maven-central/de.psdev/async-otto)
 ==========
 
 Extension to [Squares Otto][2] library to provide a Bus which always posts to the main thread.
