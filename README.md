@@ -13,14 +13,14 @@ Download [the latest JAR][1] or grab via Maven:
 <dependency>
   <groupId>de.psdev</groupId>
   <artifactId>async-otto</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4</version>
 </dependency>
 ```
 
 License
 -------
 
-    Copyright 2012-2013 Philip Schiffer
+    Copyright 2012-2016 Philip Schiffer
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
