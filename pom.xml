@@ -152,6 +152,8 @@
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>${jacoco-maven-plugin.version}</version>
                 <configuration>
+                    <inclNoLocationClasses>true</inclNoLocationClasses>
+                    <inclBootstrapClasses>true</inclBootstrapClasses>
                     <excludes>
                         <exclude>**/BuildConfig.class</exclude>
                         <exclude>**/R*.class</exclude>
